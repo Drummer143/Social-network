@@ -1,0 +1,109 @@
+.posts {
+    grid-area: "posts";
+}
+  
+.new_post {
+    padding: 3px;
+  
+    display: flex;
+  
+    background-color: var(--main-color);
+    border-radius: 10px;
+    user-select: none;
+}
+
+.text {
+    width: 80%;
+  
+    padding: 10px;
+  
+    resize: none;
+    outline: none;
+    background-color: var(--input-background-color);
+    border-radius: 7px 0 0 7px;
+    font-size: 16px;
+}
+  
+.text:focus {
+    padding-bottom: 40px;
+}
+  
+.file_button{
+    width: 10%;
+    border-left: 1px solid #fff;
+    cursor: pointer;
+}
+  
+.publish_button {
+    width: 10%;
+    border-left: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 0 7px 7px 0;
+}
+
+.currPosts {
+    padding: 30px;
+    margin-top: 10px;
+    background-color: 	var(--main-color);
+    border-radius: 10px;
+}
+
+.post {
+    margin-top: 20px;
+    padding: 3px;
+
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+    "user user"
+    "content comments";
+
+    background-color: var(--second-color);
+    border-radius: 10px;
+}
+
+.user {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--main-color);
+    grid-area: user;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user_text {
+    margin-left: 10px;
+}
+
+.name {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.date {
+    margin-top: 3px;
+    color: #ededed;
+    font-size: 14px;
+}
+
+.content {
+    padding: 20px;
+    border-right: 1px solid var(--main-color);
+    grid-area: content;
+}
+
+.contentText {
+    font-size: 20px;
+}
+
+.contentImg {
+    margin-top: 10px;
+    max-width: 510px;
+}

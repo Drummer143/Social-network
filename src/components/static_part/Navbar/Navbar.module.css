@@ -38,3 +38,12 @@
     background-color: rgba(102, 204, 204, 0.2);
     border-radius: 10px;
 }
+
+.link:active {
+    border: 3px solid var(--second-color);
+}
+
+.link:focus {
+    background-color: rgba(102, 204, 204, 0.3);
+    border-radius: 10px;
+}

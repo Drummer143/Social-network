@@ -2,19 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.css';
 
-import Header from './static_page/Header/Header';
-import Navbar from './static_page/Navbar/Navbar';
-import Friends from './Friends/Friends';
-import Profile from './Profile/profile';
+import { Routes, Route } from "react-router-dom";
+
+import Header from './components/static_part/Header/Header';
+import Navbar from './components/static_part/Navbar/Navbar';
+import Friends from './components/static_part/Friends/Friends';
+import Profile from './components/Profile/profile';
+import Messages from './components/Messages/Messages';
 
 function App() {
   return (
-    <div className='wrapper'>
-      <Header />
-      <Navbar />
-      <Profile />
-      <Friends />
-    </div>
+      <div className='app_wrapper'>
+        <Header />
+        <Navbar />
+        <Friends />
+        <div className='app_content'>
+        <Routes>
+          <Route path='/' element={<Profile />} />
+          <Route path='/Profile/Profile' element={<Profile />} />
+          <Route path='/Messages/Messages' element={<Messages />} />
+        </Routes>
+        </div>
+      </div>
   );
 }
 

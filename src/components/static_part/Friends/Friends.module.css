@@ -1,0 +1,20 @@
+.friends {
+    height: 500px;
+    padding: 10px;
+    background-color: var(--main-color);
+  
+    border-radius: 10px;
+}
+  
+.heading {
+    margin-right: 20px;
+    text-align: right;
+}
+
+.list {
+    margin-top: 10px;
+    background-color: var(--second-color);
+    border-radius: 7px;
+}
+
+/* TODO: STICKY BLOCK */

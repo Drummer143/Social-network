@@ -1,0 +1,34 @@
+.content {
+    display: grid;
+    
+    grid-template-areas:
+    "profile"
+    "posts";
+    grid-gap: 10px;
+    grid-template-rows: 260px 1fr;
+}
+  
+.profile {
+    display: flex;
+  
+    padding: 30px;
+  
+    grid-area: "profile";
+  
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+  
+.avatar {
+    width: 200px;
+    height: 200px;
+}
+  
+.about {
+    margin-left: 40px;
+    
+    display: grid;
+    
+    grid-gap: 5px;
+    grid-template-rows: 50px repeat(6, 20px);
+}

@@ -12,9 +12,72 @@
 }
 
 .list {
+    padding: 5px;
     margin-top: 10px;
-    background-color: var(--second-color);
+
+    display: grid;
+    grid-gap: 5px;
+    background-color: #339999;
     border-radius: 7px;
+}
+
+.friend {
+    position: relative;
+    height: 40px;
+    display: flex;
+
+    background-color: var(--main-color);
+
+    align-items: center;
+    justify-content: end;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.friend:hover {
+    background-color: #339999;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.write {
+    height: 30px;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--absolute-background-color);
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.write {
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    text-decoration: none !important;
+}
+
+.write:hover {
+    background-color: var(--main-color);
+}
+
+.name {
+    margin-right: 10px;
+    text-align: right;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
 }
 
 /* TODO: STICKY BLOCK */

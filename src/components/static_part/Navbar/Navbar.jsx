@@ -4,6 +4,10 @@ import classes from './Navbar.module.css';
 
 import { NavLink } from "react-router-dom";
 
+let activeStyle = {
+    textDecoration: "underline",
+  };
+
 class Navbar extends React.Component {
     render() {
         return (

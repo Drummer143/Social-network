@@ -6,9 +6,23 @@
 }
 
 .chat {
+    height: 70vh;
     padding: 30px;
     border: 1px solid var(--absolute-background-color);
     background-color: #f2f2f2;
     border-radius: 7px;
-    color: black
+    color: black;
+    overflow-y: auto;
+}
+
+.message {
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 40px;
+
+    padding: 10px;
+    display: inline-block;
+    background-color: #339999;
+    color:white;
+    border-radius: 10px;
 }

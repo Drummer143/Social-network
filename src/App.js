@@ -18,6 +18,7 @@ function App() {
         <Friends />
         <div className='app_content'>
         <Routes>
+          <Route path='https://drummer143.github.io/Social-network/' element={<Profile />} />
           <Route path='/' element={<Profile />} />
           <Route path='/Profile/Profile' element={<Profile />} />
           <Route path='/Messages/Messages' element={<Messages />} />

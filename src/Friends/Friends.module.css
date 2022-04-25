@@ -1,0 +1,11 @@
+.friends {
+    padding: 10px;
+    background-color: var(--main-color);
+  
+    border-radius: 2px 10px 10px 2px;
+}
+  
+.heading {
+    margin-right: 20px;
+    text-align: right;
+}

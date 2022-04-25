@@ -1,0 +1,40 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    max-width: 1280px;
+  
+    height: 70px;
+    margin: 0 auto;
+  
+    grid-area: nav;
+  
+    border-radius: 10px 10px 0 0;
+    background-color: var(--absolute-background-color);
+}
+  
+.nav_list {
+    padding: 0 50px;
+  
+    width: 524px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(150%);
+  
+    list-style: none;
+}
+  
+.link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.link:hover {
+    background-color: rgba(102, 204, 204, 0.2);
+    border-radius: 10px;
+}

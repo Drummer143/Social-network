@@ -1,2 +1,1 @@
-# Social-network
-### suspended work on the project for the duration of the internship
+I have suspended work on this project while I am undergoing an internship
